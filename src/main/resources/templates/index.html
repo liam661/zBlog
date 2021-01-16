@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Index</h1>
+<hr/>
+'${...}'表达式：
+<!--<b th:text="${demo}"></b><br/>-->
+<b th:object="${user}">
+    <span th:text="*{userName}"></span>
+    <span th:text="*{password}"></span>
+</b>
+</body>
+</html>
